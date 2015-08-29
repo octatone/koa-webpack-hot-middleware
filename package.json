@@ -1,0 +1,23 @@
+{
+  "name": "koa-webpack-hot-middleware",
+  "version": "1.0.1",
+  "description": "webpack hot reload middleware for koa",
+  "keywords": [
+    "koa",
+    "webpack",
+    "middleware"
+  ],
+  "homepage": "http://github.com/dayAlone/koa-webpack-hot-middleware",
+  "author": "andrey.slider@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dayAlone/koa-webpack-hot-middleware.git"
+  },
+  "bugs": {
+    "url": "http://github.com/dayAlone/koa-webpack-hot-middleware/issues"
+  },
+  "licenses": "MIT",
+  "dependencies": {
+    "webpack-hot-middleware": "2.x"
+  }
+}

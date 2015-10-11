@@ -14,8 +14,8 @@ function middleware(doIt, req, res) {
 }
 
 module.exports = function(compiler, option) {
+    var action = webpackHotMiddleware(compiler, option);
     return function* (next) {
-        var action = webpackHotMiddleware(compiler, option);
         var nextStep = yield middleware(action, this.req,  this.res);
         if (nextStep && next) {
             yield* next;

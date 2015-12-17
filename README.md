@@ -50,9 +50,9 @@ Now add the middleware into your server:
     }));
     ```
 
- 2. Add `webpack-hot-middleware` attached to the same compiler instance
+ 2. Add `koa-webpack-hot-middleware` attached to the same compiler instance
     ```js
-    app.use(require("webpack-hot-middleware")(compiler));
+    app.use(require("koa-webpack-hot-middleware")(compiler));
     ```
 
 And you're all set!

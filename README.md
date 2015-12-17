@@ -17,7 +17,7 @@ See [example/](./example/) for an example of usage.
 First, install the npm module.
 
 ```sh
-npm install --save-dev webpack-hot-middleware
+npm install --save-dev koa-webpack-hot-middleware
 ```
 
 Next, enable hot reloading in your webpack config:

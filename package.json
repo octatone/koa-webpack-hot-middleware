@@ -1,6 +1,6 @@
 {
   "name": "koa-webpack-hot-middleware",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "webpack hot reload middleware for koa",
   "keywords": [
     "koa",

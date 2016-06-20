@@ -15,10 +15,10 @@ function middleware(doIt, req, res) {
 
 module.exports = function(compiler, option) {
     var action = webpackHotMiddleware(compiler, option);
-    return function* (next) {
-        var nextStep = yield middleware(action, this.req,  this.res);
+    return function (ctx, next) {
+        var nextStep = yield middleware(action, ctx.req,  ctx.res);
         if (nextStep && next) {
-            yield* next;
+            next();
         }
     };
 };
